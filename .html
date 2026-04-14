@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muskan Singh | Software Developer & Data Analyst</title>
+
+  <!-- Font Awesome for social icons & menu -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Colorful animated + parallax background -->
+  <div class="background">
+    <div class="blob layer" data-speed="0.1"></div>
+    <div class="blob blob-2 layer" data-speed="0.2"></div>
+    <div class="blob blob-3 layer" data-speed="0.35"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">MS.</div>
+
+    <nav id="main-nav">
+      <a href="#hero">Home</a>
+      <a href="#profile">Profile</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#current">Currently Working On</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <!-- mobile menu toggle -->
+      <button id="menu-toggle" class="menu-btn" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="panel hero-section">
+      <div class="hero-content">
+        <h1 id="name">Muskan Singh</h1>
+        <p
+          id="tagline"
+          class="subtitle typing"
+          data-text="Software Developer & Data Analyst"
+        ></p>
+
+        <div class="hero-buttons">
+          <a href="#about" class="btn primary-btn">Scroll to Explore</a>
+
+          <!-- Download CV button (put your real PDF name in href) -->
+          <a href="Muskan_Singh_CV.pdf" class="btn secondary-btn" download>
+            <i class="fa-solid fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL PROFILE -->
+    <section id="profile" class="panel content-section">
+      <h2>Professional Profile</h2>
+      <p>
+        I am an aspiring <strong>Software Developer</strong> and
+        <strong>Data Analyst</strong>, currently pursuing my B.Tech Honours
+        in 2nd year. I focus on writing clean, efficient code, analyzing
+        datasets, visualizing insights, and building meaningful digital
+        experiences. My growing skillset includes Python, OOP concepts,
+        data preprocessing, operating system principles, and structured
+        problem-solving. I am continuously developing my technical
+        foundation and preparing for future roles in software engineering
+        and data analytics.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="panel content-section">
+      <h2>About Me</h2>
+      <p>
+        Hi! I’m Muskan — a 2nd-year engineering student who loves exploring
+        coding, data, operating systems and problem solving. I enjoy
+        learning by doing small projects, practicing concepts, and improving
+        step by step. My goal is to build a strong profile with good
+        projects, internships and real-world experience in tech.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="panel content-section">
+      <h2>Experience</h2>
+      <div class="cards">
+        <div class="card clickable">
+          <h3>Junior Software Developer Intern — CodeWave Labs (Dummy)</h3>
+          <p class="card-sub">Jan 2024 – Present · Remote</p>
+          <p>
+            Assisting in building simple web applications using HTML, CSS
+            and JavaScript. Fixing bugs, improving UI and learning how
+            real projects are structured.
+          </p>
+        </div>
+
+        <div class="card clickable">
+          <h3>Data Analyst Intern — Alpha Analytics (Dummy)</h3>
+          <p class="card-sub">Aug 2023 – Dec 2023 · Internship</p>
+          <p>
+            Worked with small datasets, cleaned data, created charts and
+            presented insights using Python and basic visualization tools.
+          </p>
+        </div>
+
+        <div class="card clickable">
+          <h3>Hackathon Participant — Team HackRungtan</h3>
+          <p class="card-sub">College Hackathon · Ongoing</p>
+          <p>
+            Collaborating with teammates to design problem statements,
+            brainstorm solutions and prepare prototype ideas for
+            hackathon projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I AM DOING NOW -->
+    <section id="current" class="panel content-section">
+      <h2>What I am Doing Now</h2>
+      <ul class="current-list">
+        <li>Learning advanced Python for data analysis & backend basics</li>
+        <li>Practicing Data Structures & Algorithms for strong logic</li>
+        <li>Building and improving my personal portfolio website</li>
+        <li>Exploring data visualization and analytics concepts</li>
+        <li>Preparing myself for future internships & real-world projects</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel content-section">
+      <h2>Skills</h2>
+      <ul class="chip-list">
+        <li>Python</li>
+        <li>Data Cleaning & Preprocessing</li>
+        <li>Matplotlib & Basic Visualization</li>
+        <li>Operating Systems Basics</li>
+        <li>Object Oriented Programming (OOP)</li>
+        <li>DSA Logic & Problem Solving</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="panel content-section">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card clickable">
+          <h3>Data Cleaning & Preprocessing</h3>
+          <p>
+            Cleaned a sample dataset with columns like age, income,
+            marital status and gender. Handled missing values, converted
+            text to numbers and scaled features for analysis.
+          </p>
+        </div>
+        <div class="card clickable">
+          <h3>Visualization Mini Project</h3>
+          <p>
+            Created bar charts, pie charts and scatter plots using
+            Matplotlib to understand relationships between different
+            variables in data.
+          </p>
+        </div>
+        <div class="card clickable">
+          <h3>OS Concept Notes</h3>
+          <p>
+            Simplified core Operating System concepts like PCB, mutual
+            exclusion, producer–consumer problem and CPU scheduling for
+            quick revision and sharing with classmates.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel content-section">
+      <h2>Contact</h2>
+      <p>Let’s connect for projects, networking or collaboration ✨</p>
+
+      <div class="social-links">
+        <!-- put your REAL email, LinkedIn, etc. here -->
+        <a href="mailto:your_email_here@example.com" class="social-icon" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/your-username" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/your-username" target="_blank" class="social-icon" aria-label="Twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://github.com/your-username" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://instagram.com/your-username" target="_blank" class="social-icon" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL (when clicking cards) -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="closeModal" class="close-btn" aria-label="Close">
+        &times;
+      </button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
